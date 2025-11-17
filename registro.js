@@ -1,1 +1,0 @@
-import './java/registro.js';
