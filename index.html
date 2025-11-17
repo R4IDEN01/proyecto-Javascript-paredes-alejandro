@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    <title>Simulador de agendas fisicas</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script type="module" src="prices.js" defer></script>
+  <script type="module" src="registro.js" defer></script>
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Arma! tu Agenda</h1>
+    <p>Selecciona los materiales para tu agenda:</p>
+
+    <!-- despues ver que hago con los efectos para donde dice ingresa tu nombre los colores los puse aca de perro puerco que soy -->
+    <div id="registroUsuario" style="max-width:400px;margin:20px auto;">
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+        <button id="aceptar">Registrarse</button>
+        <div id="alert" style="color:rgb(0, 255, 98);margin-top:5px;"></div>
+        <div id="saludo" style="color:rgb(128, 0, 53);margin-top:5px;"></div>
+    </div>
+
+    <form id="formAgenda">
+      <label>Tapa:</label>
+      <select id="tapa">
+        <option value="lisa">Lisa</option>
+        <option value="personalizada">Personalizada</option>
+        <option value="diseño1">Diseño 1</option>
+        <option value="diseño2">Diseño 2</option>
+        <option value="diseño3">Diseño 3</option>
+      </select>
+      <label>Papel:</label>
+      <select id="papel">
+        <option value="comun">Común</option>
+        <option value="premium">Premium</option>
+      </select>
+      <label>Formato:</label>
+      <select id="formato">
+        <option value="A5">A5</option>
+        <option value="B1">B1</option>
+      </select>
+      <label>Tipología:</label>
+      <select id="tipologia">
+        <option value="planner">Planner</option>
+        <option value="bullet">Bullet</option>
+        <option value="scrapbook">Scrapbook</option>
+      </select>
+      <label>Encuadernado:</label>
+      <select id="encuadernado">
+        <option value="lomo">Lomo</option>
+        <option value="discos">Discos</option>
+      </select>
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" min="1" value="1">
+      <button type="submit">Agregar al presupuesto</button>
+    </form>
+    <div id="resultado"></div>
+
+    <div id="presupuesto" style="max-width:800px;margin:20px auto;">
+      <h2>Presupuesto</h2>
+      <ul id="listaPresupuesto"></ul>
+      <div id="totales" style="margin-top:10px;font-weight:bold;"></div>
+      <button id="confirmarPresupuesto">Confirmar presupuesto</button>
+      <button id="vaciarPresupuesto">Vaciar presupuesto</button>
+    </div>
+
+  </body>
+  </html>
+</body>
+</html>
