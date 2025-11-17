@@ -3,34 +3,25 @@
   "tapa": {
     "lisa": 5000,
     "personalizada": 9000,
-    "dise1": 3000,
-    "dise2": 8000,
-    "dise3": 7000
+    "diseño1": 3000,
+    "diseño2": 8000,
+    "diseño3": 7000
   },
-  {
-    "base": 1000,
-    "tapa": {
-      "lisa": 5000,
-      "personalizada": 9000,
-      "diseño1": 3000,
-      "diseño2": 8000,
-      "diseño3": 7000
-    },
-    "papel": {
-      "comun": 2500,
-      "premium": 4000
-    },
-    "formato": {
-      "A5": 5000,
-      "B1": 2000
-    },
-    "tipologia": {
-      "planner": 10000,
-      "bullet": 2500,
-      "scrapbook": 3500
-    },
-    "encuadernado": {
-      "lomo": 10000,
-      "discos": 6000
-    }
+  "papel": {
+    "comun": 2500,
+    "premium": 4000
+  },
+  "formato": {
+    "A5": 5000,
+    "B1": 2000
+  },
+  "tipologia": {
+    "planner": 10000,
+    "bullet": 2500,
+    "scrapbook": 3500
+  },
+  "encuadernado": {
+    "lomo": 10000,
+    "discos": 6000
   }
+}
